@@ -1,0 +1,111 @@
+@charset "utf-8";
+@font-face {
+	font-family: "Titulos";
+	src: url("../fonts/Moteefe-lgL5q.ttf")
+}
+@font-face {
+	font-family: "Barra";
+	src: url("../fonts/Afrika.ttf");
+	
+}
+
+@font-face {
+	font-family: "cuerpo";
+	src: url("../fonts/Helvetica.ttf");
+}
+
+/* CSS Document */
+
+
+body {
+	background-color: #d96e11;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Titulos";
+	font-weight: 100;
+	font-size: 40pt;	
+}
+
+header h2 {
+	font-family: "Barra";
+	font-size: 30pt;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Cuerpo";
+	font-weight: normal;
+}
+
+nav {
+	color: white;
+	background-color: #F29727;
+	text-align: center;
+	font-family: "Cuerpo";
+}
+
+nav ul li {
+	list-style-type: none;
+    display: inline-block;
+    background-color: white;
+    width: 150px;
+	margin: 10px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 100px;
+	vertical-align: middle;
+	border-color: #32838C;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.fauna_pag {
+	width: 254px;
+	height: auto;
+}
+
+section {
+	text-align: center;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.Foto img {
+	border-radius: 25px;
+}
+
+.Datos {
+	background-color: #F28729;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	border-radius: 25px;
+}
+
+.Datos  h3 {
+	color: white;
+	text-align: justify;
+}
+
+.Datos table {
+	width: 100%;
+}
+
+.tabla_ani_datos th{
+	background-color: #32838C;
+	color: white;
+}
+
+.tabla_ani_datos td{
+	background-color: #A1A60F;
+	color: white;
+}
+
+.tabla_ani_datos h3 {
+	font-size: 85%;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}

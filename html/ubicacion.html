@@ -1,0 +1,170 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora de Madagascar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="../css/stylefl.css" rel="stylesheet" type="text/css">
+  <style>
+    .desc_fauna {
+      padding: 10px 0;
+      text-align: center;
+      background-color: #405908;
+      color: white;
+    }
+    footer {
+      background-color: #405908;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<header class="bg-success text-white text-center py-3">
+  <h1 class="animate__animated animate__zoomIn">Descubre Madagascar</h1>
+    <br>
+  <h2>Flora de Madagascar en versión dibujo</h2>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid justify-content-center">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav gap-2">
+        <a class="nav-link btn btn-outline-primary" href="../index.html">Inicio</a>
+        <a class="nav-link btn btn-outline-primary active" href="../html/ubicacion.html">Ubicación</a>
+        <a class="nav-link btn btn-outline-primary " href="../html/flora.html">Flora</a>
+        <a class="nav-link btn btn-outline-primary " href="../html/fauna.html">Fauna</a>
+        <a class="nav-link btn btn-outline-primary" href="../html/cuestionario.html">Jugando y Aprendiendo</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .flip-card-front {
+    background-color: #fff;
+  }
+
+  .flip-card-back {
+    background-color: #f8f9fa;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+</style>
+
+<section class="container my-5">
+  <div class="row row-cols-2 g-4">
+
+    <div class="col">
+      <div class="flip-card animate__animated animate__fadeIn">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagenes/ubicacion.png" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Ubicación">
+          </div>
+          <div class="flip-card-back">
+            <p><strong>Ubicación:</strong> Madagascar es una isla en el Océano Índico, al sureste de África. Es famosa por su aislamiento y biodiversidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col">
+      <div class="flip-card animate__animated animate__fadeIn">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagenes/estados.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Estados">
+          </div>
+          <div class="flip-card-back">
+            <p><strong>División:</strong> Madagascar está dividida en 6 provincias. Estas divisiones ayudan a proteger su riqueza natural.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="col">
+      <div class="flip-card animate__animated animate__fadeIn">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagenes/floram.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Flora">
+          </div>
+          <div class="flip-card-back">
+            <p><strong>Flora:</strong> La isla tiene diversas regiones climáticas, lo que permite una gran variedad de plantas. Algunas plantas ayudan a regular el clima y conservar el agua en sus regiones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="flip-card animate__animated animate__fadeIn">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="../imagenes/faunam.jpeg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Fauna">
+          </div>
+          <div class="flip-card-back">
+            <p><strong>Fauna:</strong> La fauna cambia según la región hay especies distintas en el este, oeste, sur y norte. La fauna de Madagascar ha evolucionado de forma aislada durante millones de años.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    
+<footer>
+  <p>&copy; 2025 Explorando Madagascar. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

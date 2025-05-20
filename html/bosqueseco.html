@@ -1,0 +1,188 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora de Madagascar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="../css/stylefl.css" rel="stylesheet" type="text/css">
+  <style>
+    .desc_fauna {
+      padding: 10px 0;
+      text-align: center;
+      background-color: #405908;
+      color: white;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: drop-shadow(0px 0px 5px #00000055);
+    }
+    .gallery a:hover {
+      filter: drop-shadow(0px 0px 80px #94A60D);
+    }
+    footer {
+      background-color: #405908;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-success text-white text-center py-3">
+    <h1 class="animate__animated animate__zoomIn">Bosques Secos del Oeste</h1>
+    <h3 class="animate__animated animate__bounceInUp">¿Sabías que más del 80% de las plantas que crecen en Madagascar no se encuentran en ningún otro lugar del mundo?<br>
+      Da clic en las distintas pestañas y reta tu curiosidad</h3>
+    <h2>Zona: Bosques Secos del Oeste</h2>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-center">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav gap-2">
+          <a class="nav-link btn btn-outline-primary" href="../index.html">Inicio</a>
+          <a class="nav-link btn btn-outline-primary" href="../html/ubicacion.html">Ubicación</a>
+          <a class="nav-link btn btn-outline-primary active" href="../html/flora.html">Flora</a>
+          <a class="nav-link btn btn-outline-primary" href="../html/fauna.html">Fauna</a>
+          <a class="nav-link btn btn-outline-primary" href="../html/cuestionario.html">Jugando y Aprendiendo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4 animate__animated animate__fadeIn">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="florTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active animate__animated animate__rubberBand" id="desc-tab" data-bs-toggle="tab" data-bs-target="#descripcion" type="button" role="tab">Descripción</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link animate__animated animate__rubberBand" id="species-tab" data-bs-toggle="tab" data-bs-target="#especies" type="button" role="tab">Especies</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link animate__animated animate__rubberBand" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#galeria" type="button" role="tab">Galería</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link animate__animated animate__rubberBand" id="quiz-tab" data-bs-toggle="tab" data-bs-target="#desafio" type="button" role="tab">Desafío</button>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-3">
+      <div class="tab-pane fade show active" id="descripcion" role="tabpanel">
+        <p>Los bosques secos del oeste de Madagascar se caracterizan por estaciones secas prolongadas y suelos arenosos. Estas condiciones han dado lugar a adaptaciones únicas: plantas suculentas y caducifolias que sobreviven meses sin lluvia. Explora cómo un ecosistema al borde del desierto se convierte en un museo vivo de biodiversidad.</p>
+        <div class="ratio ratio-16x9 my-3">
+          <iframe src="https://www.youtube.com/embed/piLHDnMZvcA" title="Explorando los Bosques Secos de Andrefana, Madagascar" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="especies" role="tabpanel">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <img src="../imagenes/baobab.jpg" class="card-img-top" alt="Baobab de Madagascar">
+              <div class="card-body">
+                <h5 class="card-title">Adansonia grandidieri</h5>
+                <p class="card-text">Conocido como el gran baobab, puede almacenar aguas en su tronco y alcanzar 30 m de altura. Se observa en pasillos de avenidas epónimas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <img src="../imagenes/pachy.jpg" class="card-img-top" alt="Pachypodium rosulatum">
+              <div class="card-body">
+                <h5 class="card-title">Pachypodium rosulatum</h5>
+                <p class="card-text">Este arbusto suculento almacena agua en su tronco bulboso y florece con flores amarillas en temporada húmeda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="galeria" role="tabpanel">
+        <div class="row gallery gy-3">
+          <div class="col-6 col-md-3">
+            <a href="../imagenes/baobab.jpg" target="_blank"><img src="../imagenes/baobab.jpg" alt="Detalle Baobab"></a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="../imagenes/pachy.jpg" target="_blank"><img src="../imagenes/pachy.jpg" alt="Flores Pachypodium"></a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="../imagenes/bosquesec.png" target="_blank"><img src="../imagenes/bosquesec.png" alt="Bosque Seco Oeste"></a>
+          </div>
+        </div>
+      </div>
+        <br><br><br><br><br>
+      <div class="tab-pane fade" id="desafio" role="tabpanel">
+          
+        <h4>Desafío Interactivo</h4>
+        <form>
+          
+          <div class="mb-4">
+            <label class="form-label">1. ¿Cuál adaptación permite a las plantas reducir la pérdida de agua?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+              <label class="form-check-label" for="q1a">Hojas caducas</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+              <label class="form-check-label" for="q1b">Troncos suculentos</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+              <label class="form-check-label" for="q1c">Raíces superficiales</label>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label class="form-label">2. ¿Qué característica permite el almacenamiento de agua en Adansonia grandidieri?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+              <label class="form-check-label" for="q2a">Hojas gruesas</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+              <label class="form-check-label" for="q2b">Tronco engrosado</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+              <label class="form-check-label" for="q2c">Flores grandes</label>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label class="form-label">3. ¿Por qué las plantas caducifolias sueltan sus hojas?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+              <label class="form-check-label" for="q3a">Para atraer polinizadores</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+              <label class="form-check-label" for="q3b">Para reducir la evaporación durante la estación seca</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+              <label class="form-check-label" for="q3c">Para resistir temperaturas frías</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Explorando Madagascar. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

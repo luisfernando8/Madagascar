@@ -1,0 +1,193 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora de Madagascar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="../css/stylefl.css" rel="stylesheet" type="text/css">
+  <style>
+    .desc_fauna {
+      padding: 10px 0;
+      text-align: center;
+      background-color: #405908;
+      color: white;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: drop-shadow(0px 0px 5px #00000055);
+    }
+    .gallery a:hover {
+      filter: drop-shadow(0px 0px 80px #94A60D);
+    }
+    footer {
+      background-color: #405908;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-success text-white text-center py-3">
+    <h1 class="animate__animated animate__zoomIn">Altas Mesetas Centrales</h1>
+    <h3 class="animate__animated animate__bounceInUp">¿Sabías que más del 80% de las plantas que crecen en Madagascar no se encuentran en ningún otro lugar del mundo?<br>
+       Da clic en las distintas regiones de Madagascar y reta tu curiosidad</h3>
+    <h2>Altas Mesetas Centrales</h2>
+  </header>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid justify-content-center">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav gap-2">
+        <a class="nav-link btn btn-outline-primary" href="../index.html">Inicio</a>
+        <a class="nav-link btn btn-outline-primary" href="../html/ubicacion.html">Ubicación</a>
+        <a class="nav-link btn btn-outline-primary active" href="../html/flora.html">Flora</a>
+        <a class="nav-link btn btn-outline-primary " href="../html/fauna.html">Fauna</a>
+        <a class="nav-link btn btn-outline-primary" href="../html/cuestionario.html">Jugando y Aprendiendo</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-4 animate__animated animate__fadeIn">
+    <!-- Pestañas -->
+    <ul class="nav nav-tabs" id="highlandsTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active animate__animated animate__rubberBand" id="desc-tab" data-bs-toggle="tab" data-bs-target="#descripcion" type="button" role="tab">Descripción</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link animate__animated animate__rubberBand" id="species-tab" data-bs-toggle="tab" data-bs-target="#especies" type="button" role="tab">Especies</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link animate__animated animate__rubberBand" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#galeria" type="button" role="tab">Galería</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link animate__animated animate__rubberBand" id="quiz-tab" data-bs-toggle="tab" data-bs-target="#desafio" type="button" role="tab">Desafío</button>
+      </li>
+    </ul>
+
+    
+    <div class="tab-content mt-3">
+
+     
+      <div class="tab-pane fade show active" id="descripcion" role="tabpanel">
+        
+        <p>Las Altas Mesetas Centrales de Madagascar se extienden sobre altitudes superiores a 800 m y presentan paisajes de pastizales y bosquetes esclerófilos, resultado de siglos de agricultura y quema controlada para la ganadería de zébu. </p>
+        <p>Destacan los bosques de tapia (<em>Uapaca bojeri</em>), que dominan fragmentos de sclerophyll woodland adaptado a fuego anual, y llaman la atención por su importancia ecológica y económica en la recolección de frutos, setas y gusanos de seda silvestre.</p>
+        <div class="ratio ratio-16x9 my-3">
+          <iframe src="https://www.youtube.com/embed/nLFF0ouvgiA" title="Akhil Bakshi in Central Highlands of Madagascar" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Especies -->
+      <div class="tab-pane fade" id="especies" role="tabpanel">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <img src="../imagenes/uapaca.jpg" class="card-img-top" alt="Uapaca bojeri">
+              <div class="card-body">
+                <h5 class="card-title">Uapaca bojeri (Tapia)</h5>
+                <p class="card-text">Árbol endémico de los altos plateaux; sus frutos y setas asociados son recurso local, y su madera resiste el fuego regular.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <img src="../imagenes/ericoid.jpg" class="card-img-top" alt="Ericoid thicket">
+              <div class="card-body">
+                <h5 class="card-title">Ericoid thickets</h5>
+                <p class="card-text">Matorrales montanos sobre 1,800 m, con especies de Ericaceae y ferns adaptadas a suelos pobres y clima frío. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="tab-pane fade" id="galeria" role="tabpanel">
+        <div class="row gallery gy-3">
+          <div class="col-6 col-md-3">
+            <a href="../imagenes/uapaca.jpg" target="_blank"><img src="../imagenes/uapaca.jpg" alt="Detalle Uapaca bojeri"></a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="../imagenes/ericoid.jpg" target="_blank"><img src="../imagenes/ericoid.jpg" alt="Matorral ericoide"></a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="../imagenes/meseta.jpg" target="_blank"><img src="../imagenes/meseta.jpg" alt="Mesetas centrales"></a>
+          </div>
+        </div>
+      </div>
+<br><br><br><br><br>
+      
+      <div class="tab-pane fade" id="desafio" role="tabpanel">
+        <h4>Desafío Interactivo</h4>
+        <form>
+          <div class="mb-4">
+            <label class="form-label">1. ¿Qué función principal cumple <em>Uapaca bojeri</em> en el ecosistema?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+              <label class="form-check-label" for="q1a">Previene incendios forestales</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+              <label class="form-check-label" for="q1b">Provee alimento y refugio a fauna local</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+              <label class="form-check-label" for="q1c">Absorbe metales pesados del suelo</label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">2. ¿Cuál es el rango altitudinal típico de los ericoid thickets?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+              <label class="form-check-label" for="q2a">Por debajo de 800 m</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+              <label class="form-check-label" for="q2b">Entre 800 m y 1,200 m</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+              <label class="form-check-label" for="q2c">Por encima de 1,800 m</label>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">3. ¿Cuál es la principal causa del reemplazo de bosques por pastizales?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+              <label class="form-check-label" for="q3a">Urbanización</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+              <label class="form-check-label" for="q3b">Areado de suelos</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+              <label class="form-check-label" for="q3c">Quemas para ganadería de zébu</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Explorando Madagascar. Todos los derechos reservados.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

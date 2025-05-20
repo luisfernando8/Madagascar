@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* Fuentes personalizadas */
+@font-face {
+  font-family: "Titulos";
+  src: url("../fonts/Moteefe-lgL5q.ttf");
+}
+
+@font-face {
+  font-family: "Barra";
+  src: url("../fonts/Afrika.ttf");
+}
+
+ 
+@font-face {
+  font-family: "Cuerpo";
+  src: url("../fonts/Helvetica.ttf");
+}
+
+/* Estilos generales */
+body {
+  background-color: #d96e11;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Titulos";
+  font-weight: 100;
+  font-size: 50pt;
+}
+
+header h2 {
+  font-family: "Barra";
+  font-size: 30pt;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Cuerpo";
+  font-weight: normal;
+  font-size: 15pt;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Navbar */
+nav {
+  color: white;
+  background-color: #F29727;
+  text-align: center;
+  font-family: "Cuerpo";
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  background-color: white;
+  width: 150px;
+  margin: 10px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 100px;
+  vertical-align: middle;
+  border-color: #405908;
+  border-style: solid;
+  border-width: 3px;
+}
+
+/* Galería de fauna */
+.gallery {
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery a:link,
+.gallery a:visited {
+  color: white;
+}
+
+.gallery :hover {
+  filter: drop-shadow(0px 0px 80px #94A60D);
+}
+
+/* Tarjetas de fauna */
+.desc_fauna {
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  width: 100%;
+  background-color: #405908;
+  color: white;
+}
+
+.fauna_pag {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 5px #00000055);
+}
+
+/* Secciones */
+section {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.Foto img {
+  border-radius: 25px;
+}
+
+.Datos {
+  background-color: #F28729;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  border-radius: 25px;
+}
+
+.card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+width:100%;
+}
+
+.card-img-top {
+	height: 300%;
+  object-fit: cover;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Navbar estilos mejorados */
+nav.navbar {
+  background-color: #FFA500;
+}
+
+.navbar-nav .nav-link.btn-outline-primary:hover,
+.navbar-nav .nav-link.btn-outline-primary:focus,
+.navbar-nav .nav-link.btn-outline-primary.active,
+.navbar-nav .nav-link.btn-outline-primary:active {
+  background-color: #405908;
+  border-color: #405908;
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.bg-success {
+  background-color: #405908 !important;
+}
+
+/* Ajuste de galería */
+.tab-pane#galeria .gallery img {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  z-index: 10;
+  background-color: #405908;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+#galeria_fauna {
+  flex: 1;
+padding-left: 10px;
+padding-right: 5px;
+}

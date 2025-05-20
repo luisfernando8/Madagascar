@@ -1,0 +1,222 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="../css/stylefl.css" rel="stylesheet" type="text/css">
+  <style>
+    .desc_fauna {
+      padding: 10px 0;
+      text-align: center;
+      background-color: #405908;
+      color: white;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: drop-shadow(0px 0px 5px #00000055);
+    }
+    .gallery a:hover {
+      filter: drop-shadow(0px 0px 80px #94A60D);
+    }
+    footer {
+      background-color: #405908;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-success text-white text-center py-3">
+    <h1 class="animate__animated animate__zoomIn">Jugando y Aprendiendo</h1>
+    <h2>Altas Mesetas Centrales</h2>
+  </header>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid justify-content-center">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav gap-2">
+        <a class="nav-link btn btn-outline-primary" href="../index.html">Inicio</a>
+        <a class="nav-link btn btn-outline-primary" href="../html/ubicacion.html">Ubicación</a>
+        <a class="nav-link btn btn-outline-primary " href="../html/flora.html">Flora</a>
+        <a class="nav-link btn btn-outline-primary " href="../html/fauna.html">Fauna</a>
+        <a class="nav-link btn btn-outline-primary active" href="../html/cuestionario.html">Jugando y Aprendiendo</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-4 animate__animated animate__fadeIn">
+  <!-- Pestañas -->
+  <ul class="nav nav-tabs" id="endemicTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active animate__animated animate__rubberBand" id="desc-tab" data-bs-toggle="tab" data-bs-target="#descripcion" type="button" role="tab">Explora y Narra</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link animate__animated animate__rubberBand" id="species-tab" data-bs-toggle="tab" data-bs-target="#especies" type="button" role="tab">Empareja Especies</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link animate__animated animate__rubberBand" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#galeria" type="button" role="tab">Mapa Interactivo</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link animate__animated animate__rubberBand" id="quiz-tab" data-bs-toggle="tab" data-bs-target="#desafio" type="button" role="tab">Quiz Científico</button>
+    </li>
+  </ul>
+
+  <div class="tab-content mt-3">
+
+   
+    <div class="tab-pane fade show active" id="descripcion" role="tabpanel">
+      <h4>Juego de Narración</h4>
+      <p>Imagina que eres un joven explorador en Madagascar. Completa la historia rellenando los espacios:</p>
+      <form>
+        <div class="mb-3">
+          <label for="fill1" class="form-label">1. Al pisar el bosque seco del oeste, lo primero que observé fue _________ gigante al lado de un baobab.</label>
+          <input type="text" class="form-control" id="fill1" placeholder="describe qué viste">
+        </div>
+        <div class="mb-3">
+          <label for="fill2" class="form-label">2. Cuando llegué a la selva tropical del este, escuché el sonido de los lémures y vi _________ de colores brillantes.</label>
+          <input type="text" class="form-control" id="fill2" placeholder="¿qué animal o planta?">
+        </div>
+        <button type="submit" class="btn btn-success">Enviar historia</button>
+      </form>
+    </div>
+<br>
+<br>
+    <div class="tab-pane fade" id="especies" role="tabpanel">
+      <h4>Empareja la Especie con su Descripción</h4>
+      <p>Selecciona de la lista la planta o animal que corresponda a cada pista.</p>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">1. Esta suculenta almacena agua en su tronco bulboso:</label>
+          <select class="form-select" name="q1">
+            <option value="">-- Elige una opción --</option>
+            <option value="a">Catharanthus roseus</option>
+            <option value="b">Pachypodium rosulatum</option>
+            <option value="c">Indri</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">2. Lémur venerado como ancestro y protegido por tabúes:</label>
+          <select class="form-select" name="q2">
+            <option value="">-- Elige una opción --</option>
+            <option value="a">Vanga de Madagascar</option>
+            <option value="b">Aye-aye</option>
+            <option value="c">Indri</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">3. Planta usada en fármacos contra el cáncer:</label>
+          <select class="form-select" name="q3">
+            <option value="">-- Elige una opción --</option>
+            <option value="a">Adansonia grandidieri</option>
+            <option value="b">Catharanthus roseus</option>
+            <option value="c">Gecko cola de hoja</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success">Comprobar respuestas</button>
+      </form>
+    </div>
+<br>
+<br>
+    <div class="tab-pane fade" id="galeria" role="tabpanel">
+      <h4>¿Dónde crees que está?</h4>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">1. Bosques secos donde crecen baobabs monumentales:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="map1" id="map1a" value="oeste">
+            <label class="form-check-label" for="map1a">Oeste</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="map1" id="map1b" value="este">
+            <label class="form-check-label" for="map1b">Este</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="map1" id="map1c" value="sur">
+            <label class="form-check-label" for="map1c">Sur</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">2. Zona espinosa con cactus y suculentas únicas:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="map2" id="map2a" value="oeste">
+            <label class="form-check-label" for="map2a">Oeste</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="map2" id="map2b" value="sur">
+            <label class="form-check-label" for="map2b">Sur</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="map2" id="map2c" value="centro">
+            <label class="form-check-label" for="map2c">Mesetas centrales</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">Verificar ubicación</button>
+      </form>
+    </div>
+
+    
+    <div class="tab-pane fade" id="desafio" role="tabpanel">
+      <h4>Desafío Científico</h4>
+      <p>Responde con lo que has aprendido:</p>
+      <form>
+        <!-- Pregunta 1 -->
+        <div class="mb-4">
+          <label class="form-label">1. ¿Qué porcentaje de fauna en Madagascar es endémico?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+            <label class="form-check-label" for="q1a">70%</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+            <label class="form-check-label" for="q1b">90%</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+            <label class="form-check-label" for="q1c">100%</label>
+          </div>
+        </div>
+        <!-- Pregunta 2 -->
+        <div class="mb-4">
+          <label class="form-label">2. ¿Cómo protegen algunos malgaches sus bosques sagrados?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+            <label class="form-check-label" for="q2a">Con guardias armados</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+            <label class="form-check-label" for="q2b">Mediante tabúes (<em>fady</em>)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+            <label class="form-check-label" for="q2c">Plantando nuevas especies</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Explorando Madagascar. Todos los derechos reservados.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
